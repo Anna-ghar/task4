@@ -30,9 +30,10 @@
     <p>Description: <?= $weatherData['weather'][0]['description'] ?></p>
     <p>Temperature: <?= $weatherData['main']['temp'] ?>°C</p>
     <p>Humidity: <?= $weatherData['main']['humidity'] ?>%</p>
-    <a href="../index.php">Back</a>
+
 <?php else: ?>
     <p>Weather data not found for this city.</p>
 <?php endif; ?>
+    <a href="../index.php">Back</a>
 </body>
 </html>
