@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 50px;
-            color: #333;
-        }
-
-        p {
-            margin-top: 20px;
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="../views/css/weather_view.css">
 </head>
 <body>
 <?php if ($weatherData): ?>
