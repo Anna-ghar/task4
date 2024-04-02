@@ -2,19 +2,23 @@
 
 require_once 'WeatherModel.php';
 
-class WeatherController {
+class WeatherController
+{
     private $weatherModel;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->weatherModel = new WeatherModel();
     }
 
-    public function index() {
+    public function index()
+    {
         $cityData = $this->weatherModel->getAllData();
         include 'views/home_view.php';
     }
 
-    public function getWeather($cityId) {
+    public function getWeather($cityId)
+    {
         $cityData = $this->weatherModel->getAllData();
         $weatherData = $this->weatherModel->getWeatherById($cityId, $cityData);
 
